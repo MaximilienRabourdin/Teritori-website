@@ -78,7 +78,7 @@ function App () {
       <EnterTheDApp />
 
       <div>
-        <img src="logo.png" alt="Logo" className="Logo" />
+        <img src="logo.svg" alt="Logo" className="Logo" />
 
         <div className="CenterElem">
           <span className="Title TextGradient">TERITORI</span>
