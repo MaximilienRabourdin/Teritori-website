@@ -32,7 +32,6 @@ const ButtonElem: React.FC<{
 }
 
 const EnterTheDApp: React.FC = () => {
-  // FIXME: overlaps with nav on small width screens
   const baseContent = 'ENTER THE DAPP'
   const [content, setContent] = useState(baseContent)
   const comingSoon = 'COMING SOON'
