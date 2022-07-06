@@ -81,7 +81,7 @@ function App () {
         <img src="logo.svg" alt="Logo" className="Logo" />
 
         <div className="CenterElem">
-          <span className="Title TextGradient">TERITORI</span>
+          <h1 className="Title TextGradient">TERITORI</h1>
         </div>
         <div className="CenterElem">
           <span className="SubTitle TextGradient">FUTURE OF COMMUNITIES</span>
