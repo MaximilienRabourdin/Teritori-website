@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,600,700');
+
+.Home{
+  background: url('../../public/background.svg');
+  background-color: black;
+  background-size: cover;
+  height: 80vh;
+  width: 100vw;
+  text-align: center;
+  font-family: Exo;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.TextGradient {
+  background: linear-gradient(to right, #2AF598, #009EFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.Enter {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 767px) {
+  .Enter {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Enter {
+    position: absolute;
+    top: 38px;
+    right: 53px;
+    text-align: right;
+    width: 150px;
+  }
+}
+
+.Logo {
+
+  display: flex;
+  justify-content: center;
+  padding-top: 18rem;
+  width: 10%;
+  margin: auto;
+
+  background-size: cover;
+
+}
+
+@media (max-width: 767px) {
+  .Logo {
+    margin-top: 8vh;
+  }
+}
+
+.Title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 33px;
+  letter-spacing: -0.01em;
+}
+
+.SubTitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+}
+
+.SubSubTitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 10px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  background: linear-gradient(173.58deg, rgba(255, 255, 255, 0.5) 5.06%, rgba(255, 255, 255, 0) 106.72%), linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.MainButtons {
+  margin-top: 7vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14rem;
+}
+
+@media (max-width: 767px) {
+  .MainButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ButtonElem {
+    margin-bottom: 20px;
+  }
+}
+
+.ButtonElem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 48px;
+  border-radius: 13px;
+  width: 156px;
+  background: url('../../public/button-borders.svg');
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  transition: opacity 0.2s
+}
+
+.ButtonElem:hover {
+  opacity: 0.7;
+}
+
+.CenterElem {
+  margin-top: 8px;
+}
