@@ -1,20 +1,5 @@
-import React, { useState } from 'react'
-import '../Footer/FooterStyled.css'
-
-const EnterTheDApp: React.FC = () => {
-  const baseContent = 'ENTER THE DAPP'
-  const [content, setContent] = useState(baseContent)
-  const comingSoon = 'COMING SOON'
-  return (
-      <div
-        className="Enter TextGradient"
-        onMouseEnter={() => setContent(comingSoon)}
-        onMouseLeave={() => setContent(baseContent)}
-      >
-        {content}
-      </div>
-  )
-}
+import React from 'react';
+import '../Footer/FooterStyled.css';
 
 const gitbookLink = 'https://teritori.gitbook.io'
 const discordLink = 'https://discord.gg/teritori'
@@ -31,7 +16,7 @@ const FooterButton: React.FC<{ image: string; link: string; alt: string }> = ({
       <img src={image} alt={alt} />
     </a>
   )
-}
+};
 
 function Footer () {
   return (
@@ -42,9 +27,8 @@ function Footer () {
         <FooterButton image="twitter.svg" alt="Twitter" link={twitterLink} />
         <FooterButton image="discord.svg" alt="Discord" link={discordLink} />
       </div>
-      <EnterTheDApp />
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

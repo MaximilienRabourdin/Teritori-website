@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import './HomeStyled.css'
+import React, { useState } from 'react';
+import './HomeStyled.css';
 
 const ButtonElem: React.FC<{
   title: string
@@ -22,19 +22,19 @@ const ButtonElem: React.FC<{
   )
 }
 
-const gitbookLink = 'https://teritori.gitbook.io'
-const whitepaperLink = `${gitbookLink}/teritori-whitepaper`
-const testnetLink = `${whitepaperLink}/join-teritori-testnet`
+const gitbookLink = 'https://teritori.gitbook.io';
+const whitepaperLink = `${gitbookLink}/teritori-whitepaper`;
+const testnetLink = `${whitepaperLink}/join-teritori-testnet`;
 
 function Home () {
   return (
     <div className="Home">
         <img src="logo.svg" alt="Logo" className="Logo" />
         <div className="CenterElem">
-          <h1 className="Title TextGradient">TERITORI</h1>
+          <h1 className="Title TextGradient">TERITORI</h1>:
         </div>
         <div className="CenterElem">
-          <span className="SubTitle TextGradient">FUTURE OF COMMUNITIES</span>
+          <span className="SubTitle TextGradient">FUTURE OF COMMUNITIES</span>:
         </div>
         <div className="CenterElem">
           <span className="SubSubTitle TextGradient">
@@ -43,13 +43,13 @@ function Home () {
         </div>
 
         <div className="MainButtons">
-          <ButtonElem title="Airdrop" link="#airdrop" noBlank comingSoon />
-          <ButtonElem title="Whitepaper" link={whitepaperLink} />
-          <ButtonElem title="Join Validators" link={testnetLink} />
+          <ButtonElem title="Airdrop" link="#airdrop" noBlank comingSoon />;
+          <ButtonElem title="Whitepaper" link={whitepaperLink} />;
+          <ButtonElem title="Join Validators" link={testnetLink} />;
         </div>
 
     </div>
   )
 }
 
-export default Home
+export default Home;

@@ -40,7 +40,6 @@ function Header () {
       <div className="Nav">
         <Link to='/' className='NavElem' target="_blank" rel="noreferrer"> Home </Link>
         <NavElem title="ECOSYSTEM" link={ecosystemLink} />
-        <NavElem title="ECOSYSTEM" link={ecosystemLink} />
         <NavElem title="TESTNET" link={testnetLink} />
         <NavElem title="COMMUNITY" link= {discordLink} />
         <NavElem title="DOCS" link= {whitepaperLink} />

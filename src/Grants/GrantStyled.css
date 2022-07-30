@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,600,700');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .grant {
     font-family: Exo;
     height: 100%;
@@ -10,9 +16,10 @@
 }
 
 .title_background_block{
-    background: url('../../public/hint-background.png');
+    background: url('../../public/grants-background.png');
     background-color: black;
     background: cover;
+    background-repeat: no-repeat;
     background-position-y: 44%;
     background-position-x: 55%;
     height: 50vh;
@@ -28,9 +35,10 @@
 }
 
 .blockText{
-    height: 100%;
+    height:100%;
     width: 100vw;
     display: flex;
+    margin: 0 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -41,7 +49,7 @@
     color: white;
     font-weight: 600;
     font-size: 28px;
-    line-height: 32px;
+    line-height: 70px;
     letter-spacing:-4%
 }
 
@@ -55,68 +63,77 @@
     letter-spacing:-4%    
 }
 
-.card_section{
-    width: 100vw;
+.galerie{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
     height: 100%;
+    margin: auto;
     background-color: black ;
     padding: 3rem 0rem;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.container{
-    width: 451px;
-    height: 251px;
-    border: 1px solid #333333;
-    border-top:none;
-    border-radius: 0px 20px 0px ;
-    background-color: #333333 ;
-    --corner: 2em;
-    clip-path: polygon(4% 0, 100% 0, 100% 11%, 100% 95%, 95% 100%, 14% 100%, 0 100%, 0 6%);
+.all_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding: 3rem 0rem;
 }
 
 .card_block {
     border-spacing: 10px;
 }
-
-.card{
-    width: 500px;
-    height: 300px;
-    border: 1px solid #333333;
-    border-top:none;
-    border-radius: 0px 10px 0px ;
-    background-color: black ;
-    --corner: 2em;
-    clip-path: polygon(4% 0, 100% 0, 100% 11%, 100% 95%, 95% 100%, 14% 100%, 0 100%, 0 6%);
-    }
-
-.container{
-    width: 501px;
-    height: 301px;
-    border: 1px solid #333333;
+.container_card{
+    width: 434px;
+    height: 281px;
+    margin:10px;
+    border: 0.4px solid #333333;
     border-top:none;
     border-radius: 0px 11px 0px ;
     background-color: #333333 ;
     --corner: 2em;
     clip-path: polygon(4% 0, 100% 0, 100% 11%, 100% 95%, 95% 100%, 14% 100%, 0 100%, 0 6%);   
 }
+.card{
+    width: 100%;
+    height: 280px;
+    border: 1px solid #333333;
+    border-radius: 0px 10px 0px ;
+    background-color: black ;
+    --corner: 2em;
+    clip-path: polygon(4% 0, 100% 0, 100% 11%, 100% 95%, 95% 100%, 14% 100%, 0 100%, 0 6%);
+    }
+
+.container_title{
+    display: flex;
+    height:64px;
+    width: 100%;
+    align-items: center;
+    border: 1px 0px 2px 0px solid #333333; 
+    background-color:#171717;
+    border-radius: 0px 11px 0px;
+    clip-path: polygon(4% 0, 100% 0, 100% 30%, 100% 78%, 95% 100%, 0 100%, 0% 70%, 0 7%);
+}
 
 .card_title{
     display: flex;
-    height:40px;
+    height:64px;
     align-items: center;
-    padding: 1rem 2rem;
-    border: 1px solid #333333; 
+    padding: 1rem 1.4rem;
+    border: 1px 0px 2px 0px solid #333333; 
     background-color:#171717;
     border-radius: 0px 11px 0px;
     clip-path: polygon(4% 0, 100% 0, 100% 11%, 100% 95%, 95% 100%, 14% 100%, 0 100%, 0 6%);   
 }
 
 .card_title_icon {
-    padding-right: 1rem;
-    width:32px;
+    width:100 ;
     height:35px;
+    margin-right: 0.4rem;
 }
 
 .card_title_text {
@@ -133,7 +150,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem 2rem; 
+    padding: 1.4rem 2rem; 
+    line-height: 2.8rem;
 }
 
 .listName {
@@ -143,31 +161,43 @@
 }
 
 .card_button {
-    height: 20px;;
-    width: 40px;
-    padding: 0.6rem;
+    height: 44px;;
+    width: 78px;
     margin-left:2rem;
     background-color: #2B2B33;
     display: flex;
-    align-items:center;
-    align-content: center;
     border-radius: 0px 14px 0px;
-    clip-path: polygon(4% 0, 100% 0, 100% 11%, 100% 95%, 95% 100%, 14% 100%, 0 100%, 0 6%);
-
+    border: 0;
+    clip-path: polygon(20% 0%, 100% 0, 100% 71%, 80% 98%, 0 100%, 0% 30%);
 }
+
 
 .container_button {
+    height: 42px;;
+    width: 75px;
+    border-radius: 0px 14px 0px;
+    clip-path: polygon(4% 0, 100% 0, 100% 11%, 100% 95%, 95% 100%, 14% 100%, 0 100%, 0 6%);   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333333;
+    --corner: 2em;
+    clip-path: polygon(4% 0, 100% 0, 100% 11%, 100% 95%, 95% 100%, 14% 100%, 0 100%, 0 6%);
+    }
 
-}
 
 .card_button_link{
     color:#18A9E6;
     text-decoration: none;
+    border-radius: 0px 14px 0px;
+    clip-path: polygon(4% 0, 100% 0, 100% 11%, 100% 95%, 95% 100%, 14% 100%, 0 100%, 0 6%);   
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
     font-family: Exo;
-
+    align-items:center;
+    align-content: center;
+    
 }
 
 

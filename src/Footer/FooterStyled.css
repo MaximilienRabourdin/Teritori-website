@@ -3,7 +3,6 @@
   background-color: black;
   opacity: 1;
   background-size: cover;
-  background: url('../../public/background.svg');
   height: 10vh;
   display: flex;
   align-items: center;  
