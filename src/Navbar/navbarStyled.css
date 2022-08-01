@@ -19,6 +19,16 @@ li {
   color: rgb(204, 204, 204);
   font-family: Exo;
   text-transform: uppercase;
+
+}
+
+.nav_enterthedap {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+  font-family: Exo;
+  text-transform: uppercase;
+  align-items: center;
+  align-content: center;
 }
 
 .nav__link :hover {
@@ -33,18 +43,15 @@ li {
   text-fill-color: transparent;
 }
 
-#nav_link_mobile_menu {
-  position: absolute;
-  right: 6rem;
-}
-
 .nav {
+  padding:0 6rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 8vh;
   background: black;
 }
+
 .nav__brand {
   text-transform: uppercase;
 }
@@ -66,6 +73,8 @@ li {
   transition: 0.3s ease-in;
 }
 
+
+
 .Enter_TextGradient{
   background: linear-gradient(to right, #2AF598, #009EFD);
   -webkit-background-clip: text;
@@ -74,8 +83,12 @@ li {
   text-fill-color: transparent;
   font-weight: 700;
   min-width: 130px;
-  
 }
+
+#last_button_menu {
+  margin-right: 30%;
+}
+
 
 .NavElem {
   text-decoration: none;
@@ -202,3 +215,21 @@ li:hover ul#submenu {
   transform: rotate(45deg) translate(-4px, -5px);
 }
 
+.Enter_TextGradient{
+  background: linear-gradient(to right, #2AF598, #009EFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 700;
+  min-width: 130px;
+}
+
+.nav_enterthedap {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+  font-family: Exo;
+  text-transform: uppercase;
+  align-items: center;
+  align-content: center;
+}

@@ -15,7 +15,7 @@
     justify-content: center !important;
 }
 
-.title_background_block{
+.title_background_block_grant{
     background: url('../../public/grants-background.png');
     background-color: black;
     background: cover;

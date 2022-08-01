@@ -4,7 +4,7 @@ import './GrantStyled.css';
 function Grants () {
   return (
    <div className="grant">
-      <div className="title_background_block">
+      <div className="title_background_block_grant">
       <div className="blockText">
       <img src="logo.svg" alt="Logo" className="white_logo" />
       <h1 className="Title_White"> Teritori </h1>

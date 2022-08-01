@@ -77,9 +77,11 @@ function Navbar () {
           </a>
         </li>
       </ul>
-      <a href='#' className='nav__link' id='enter_the_dap_burgermenu'>
+      <li className='nav__item'>
+        <a href='#' className='nav__link' id='enter_the_dap_burgermenu'>
             <EnterTheDApp />
           </a>
+        </li>
       <div onClick={navToggle} className={icon}>
         <div className='line1'></div>
         <div className='line2'></div>
