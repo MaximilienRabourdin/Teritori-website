@@ -26,7 +26,7 @@ const gitbookLink = 'https://teritori.gitbook.io';
 const whitepaperLink = `${gitbookLink}/teritori-whitepaper`;
 const testnetLink = `${whitepaperLink}/join-teritori-testnet`;
 
-function Home () {
+const Home: React.FC = () => {
   return (
     <div className="Home">
         <img src="logo.svg" alt="Logo" className="Logo" />

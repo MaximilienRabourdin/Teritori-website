@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../Header/HeaderStyled.css'
 
-// LIEN POUR LES ROUTES
+// Link for routes
 import { Link } from 'react-router-dom'
 
 const NavElem: React.FC<{ title: string; link: string }> = ({
@@ -34,7 +34,7 @@ const testnetLink = `${whitepaperLink}/join-teritori-testnet`
 const ecosystemLink = `${whitepaperLink}/laboratori/incentivized-developper-ecosystem`
 const discordLink = 'https://discord.gg/teritori'
 
-function Header () {
+const Header: React.FC = () => {
   return (
     <div className='header'>
       <div className="Nav">

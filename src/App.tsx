@@ -1,8 +1,9 @@
 import React from 'react';
+import './App.css';
 
 // Components
 import Navbar from './Navbar/navbar';
-import Footer from './Footer/footer';
+import Footer from './Footer';
 import Homepage from './Homepage';
 import Grants from './Grants';
 import Design from './Design';

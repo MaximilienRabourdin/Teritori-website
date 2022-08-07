@@ -1,7 +1,7 @@
 import React from 'react';
 import './GrantStyled.css';
 
-function Grants () {
+const Grants: React.FC = () => {
   return (
    <div className="grant">
       <div className="title_background_block_grant">
@@ -13,7 +13,7 @@ function Grants () {
       </div>
       <div className="galerie">
         <div className="all_container">
-        {/* Pour avoir des coins 'cassés' il faut avoir deux element l'un sur l'autre */}
+        {/* To have clip path border we need to have container which encompasses our div  */}
         <div className="container_card">
         <div className="card">
           <div className="container_title">

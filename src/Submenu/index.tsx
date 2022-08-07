@@ -1,7 +1,7 @@
 import React from 'react';
 import './SubmenuStyled.css';
 
-function Submenu () {
+const Submenu: React.FC = () => {
   return (
     <nav className="dropdownmenu">
     <ul>

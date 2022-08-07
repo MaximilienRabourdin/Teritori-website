@@ -1,20 +1,6 @@
 import React, { useState } from 'react'
 import '../Navbar/navbarStyled.css'
 
-//add ant.design for the submenu
-
-// LIEN POUR LES ROUTES
-// import { Link } from 'react-router-dom'
-
-// const NavElem: React.FC<{ title: string; link: string }> = ({
-//   title,
-//   link
-// }) => (
-//       <a href={link} className="NavElem" target="_blank" rel="noreferrer">
-//         {title}
-//       </a>
-// )
-
 const EnterTheDApp: React.FC = () => {
   const baseContent = 'ENTER THE DAPP'
   const [content, setContent] = useState(baseContent)
@@ -36,7 +22,7 @@ const EnterTheDApp: React.FC = () => {
 // const ecosystemLink = `${whitepaperLink}/laboratori/incentivized-developper-ecosystem`
 // const discordLink = 'https://discord.gg/teritori'
 
-function navbarhomepage () {
+const navbarhomepage: React.FC = () => {
   const [active, setActive] = useState('nav__menu');
   const [icon, setIcon] = useState('nav__toggler');
   const navToggle = () => {
