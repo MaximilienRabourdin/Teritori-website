@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import '../Navbar/navbarStyled.css'
+import './navbarStyled.css'
+
+import SubMenu from '../Submenu/index';
 
 const EnterTheDApp: React.FC = () => {
   const baseContent = 'ENTER THE DAPP'
@@ -16,13 +18,8 @@ const EnterTheDApp: React.FC = () => {
   )
 }
 
-// const gitbookLink = 'https://teritori.gitbook.io'
-// const whitepaperLink = `${gitbookLink}/teritori-whitepaper`
-// const testnetLink = `${whitepaperLink}/join-teritori-testnet`
-// const ecosystemLink = `${whitepaperLink}/laboratori/incentivized-developper-ecosystem`
-// const discordLink = 'https://discord.gg/teritori'
 
-const navbarhomepage: React.FC = () => {
+const NavbarHomepage: React.FC = () => {
   const [active, setActive] = useState('nav__menu');
   const [icon, setIcon] = useState('nav__toggler');
   const navToggle = () => {
@@ -36,7 +33,7 @@ const navbarhomepage: React.FC = () => {
     } else setIcon('nav__toggler');
   };
   return (
-    <nav className='nav'>
+    <nav className='nav_homepage'>
       <a href='/' className='nav__brand'>
        <img src="logo header.png" alt="logo" />
       </a>
@@ -51,11 +48,7 @@ const navbarhomepage: React.FC = () => {
             Testnet
           </a>
         </li>
-        <li className='nav__item'>
-          <a href='#' className='nav__link'>
-            Community
-          </a>
-        </li>
+        <SubMenu />
         <li className='nav__item'>
           <a href='#' className='nav__link'>
             Docs
@@ -67,9 +60,11 @@ const navbarhomepage: React.FC = () => {
           </a>
         </li>
       </ul>
-      <a href='#' className='nav__link' id='enter_the_dap_burgermenu'>
+      <li className='nav__item'>
+        <a href='#' className='nav__link' id='enter_the_dap_burgermenu'>
             <EnterTheDApp />
           </a>
+        </li>
       <div onClick={navToggle} className={icon}>
         <div className='line1'></div>
         <div className='line2'></div>
@@ -79,4 +74,4 @@ const navbarhomepage: React.FC = () => {
   );
 }
 
-export default navbarhomepage;
+export default NavbarHomepage;

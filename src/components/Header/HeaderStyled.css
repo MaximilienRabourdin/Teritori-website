@@ -1,7 +1,6 @@
 .header {
   width: 100vw;
   background-color: black;
-  background: url('../../public/background.svg');
   height: 10vh;
   text-align: center;
   background-size: cover;

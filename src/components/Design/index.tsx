@@ -3,9 +3,14 @@ import React from 'react';
 // Styled
 import './DesignStyled.css';
 
+//import Header and Footer
+import Navbar from '../Navbar';
+import Footer from '../Footer';
+
 const Design: React.FC = () => {
   return (
    <div className="design">
+     <Navbar />
       <div className="title_background_block_design">
       <div className="blockText"id='menu'>
       <img src="logo.svg" alt="Logo" className="white_logo" />
@@ -46,6 +51,7 @@ const Design: React.FC = () => {
           <p className="color_name">Secondary</p>
           <p className="color_code"> #5C26F5</p>
           </div>
+
           <div className="card_component">
           <div className="color_card" id='main_tertiary'>
           </div>
@@ -316,6 +322,7 @@ const Design: React.FC = () => {
         </div>
       </div>
       </div>
+      <Footer />
    </div>
   );
 };

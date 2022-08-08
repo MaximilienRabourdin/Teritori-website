@@ -14,11 +14,36 @@ body {
 li {
   list-style: none;
 }
+
+.nav_homepage{
+  width: 100vw;
+  height: 10vh;
+  background-size: cover;
+  background: transparent;
+  font-family: Exo;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 6rem;
+  }
+
+
 .nav__link {
   text-decoration: none;
   color: rgb(204, 204, 204);
   font-family: Exo;
   text-transform: uppercase;
+
+}
+
+.nav_enterthedap {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+  font-family: Exo;
+  text-transform: uppercase;
+  align-items: center;
+  align-content: center;
 }
 
 .nav__link :hover {
@@ -33,18 +58,8 @@ li {
   text-fill-color: transparent;
 }
 
-#nav_link_mobile_menu {
-  position: absolute;
-  right: 6rem;
-}
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 8vh;
-  background: black;
-}
+
 .nav__brand {
   text-transform: uppercase;
 }
@@ -72,11 +87,14 @@ li {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  display: block;
   font-weight: 700;
   min-width: 130px;
-  
 }
+
+#last_button_menu {
+  margin-right: 30%;
+}
+
 
 .NavElem {
   text-decoration: none;
@@ -110,26 +128,80 @@ li {
   letter-spacing: -0.01em;
 }
 
+/* Submenu Community */
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+}
+.dropdownmenu ul {
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	color: #FFFFFF;
+	display: block;
+	padding: 6px;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.dropdownmenu li:hover a {
+	background: #000000;
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+  background: black;
+  ;
+}
+#submenu a {
+	background-color:#000000;
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 888px) {
   .nav__toggler {
     display: block;
     cursor: pointer;
   }
   .nav__menu {
-    z-index: 99;
+    z-index: 999;
     position: fixed;
+    
     top: 7vh;
     right: 0;
-    height: 93vh;
+    height: 100%;
     width: 100vw;
-    background: url('../../public/background.svg');
+    padding-bottom: 2rem;
+    background: url('../../../public/background.svg');
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
   }
 
- 
 }
 /* Active Class */
 .nav__active {
@@ -148,3 +220,21 @@ li {
   transform: rotate(45deg) translate(-4px, -5px);
 }
 
+.Enter_TextGradient{
+  background: linear-gradient(to right, #2AF598, #009EFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 700;
+  min-width: 130px;
+}
+
+.nav_enterthedap {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+  font-family: Exo;
+  text-transform: uppercase;
+  align-items: center;
+  align-content: center;
+}

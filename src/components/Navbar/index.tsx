@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../Navbar/navbarStyled.css'
+import './navbarStyled.css'
 
 import SubMenu from '../Submenu/index';
 
@@ -18,11 +18,6 @@ const EnterTheDApp: React.FC = () => {
   )
 }
 
-// const gitbookLink = 'https://teritori.gitbook.io'
-// const whitepaperLink = `${gitbookLink}/teritori-whitepaper`
-// const testnetLink = `${whitepaperLink}/join-teritori-testnet`
-// const ecosystemLink = `${whitepaperLink}/laboratori/incentivized-developper-ecosystem`
-// const discordLink = 'https://discord.gg/teritori'
 
 const Navbar: React.FC = () => {
   const [active, setActive] = useState('nav__menu');

@@ -1,0 +1,35 @@
+
+.card_component {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+} 
+
+.color_card{
+    width: 148px;
+    height: 148px;
+    clip-path: polygon(10% 0, 100% 0, 100% 30%, 100% 89%, 90% 100%, 30% 100%, 0 100%, 0 10%);
+    border-radius: 0px 10px 0px 10px;  
+}
+
+#main_secondary{
+    background-color: #5C26F5;
+}
+
+
+.color_name {
+    color: white;
+    font-size: 13px;
+    font-weight: 600;;
+    font-style: normal;
+    margin-top:10px;
+}
+
+.color_code {
+    color: #A3A3A3;
+    font-size: 12px;
+    font-weight: 600;
+    width: 148px;
+    margin-top:5px;
+    font-style: normal;
+}

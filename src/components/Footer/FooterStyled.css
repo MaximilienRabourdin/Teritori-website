@@ -1,0 +1,87 @@
+
+.footer {
+  font-family: Exo;
+  background-color: #000000;
+  opacity: 0.3;
+  opacity: 1;
+  background-size: cover;
+  width: 100%;
+  border-top: 1px solid #333333;
+
+}
+
+.allcolumn_section {
+width: 100vw;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+flex-direction: row;
+}
+
+.bottom_section {
+  width: 100vw;
+  border-top: 1px solid #333333;
+  display: flex;
+  padding:2rem 5rem;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.leftside_bottom_section{
+  display: flex; 
+  padding-left: 4rem;
+  height:100%;
+  width: 1/3;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logo_footer{
+  width: 105px;
+  height: 26px;
+  margin-right: 8rem;
+  
+}
+
+.term_privacy{
+  color:white;
+}
+
+.middle_bottom_section{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 1/3;
+}
+
+.teritori2022{
+  color: #777777;
+  ;
+}
+  
+.right_bottom_section {
+  /* FIXME: overlaps with content on small height screens */
+  display: flex;
+  justify-content: center;
+  width: 1/3;
+  padding-right: 4rem;
+}
+
+.FooterButton {
+  border: 1px solid #1B1E1F;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 8px;
+  transition: opacity 0.2s
+}
+
+.FooterButton:hover {
+  opacity: 0.7;
+}

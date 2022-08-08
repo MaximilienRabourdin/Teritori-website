@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../Header/HeaderStyled.css'
+import './HeaderStyled.css'
 
 // Link for routes
 import { Link } from 'react-router-dom'
