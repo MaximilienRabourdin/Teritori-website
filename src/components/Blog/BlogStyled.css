@@ -1,0 +1,16 @@
+.blog_section{
+    height:100%;
+    min-width: 100vw;
+    background-color: red;
+}
+
+.title_blog{
+    display:flex;
+    align-items:center;
+    align-content: center;
+    justify-content: center;
+    color:white;
+    font-family: Exo;
+    font-weight: 600;
+    font-size: 40px;
+}

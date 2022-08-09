@@ -7,14 +7,15 @@ const CardGrant: React.FC<{
   list2: string,
   list3: string,
   list4: string,
-}> = ({title, list1, list2, list3, list4}) => { 
+  icon: string,
+}> = ({title, list1, list2, list3, list4, icon}) => { 
 return (
       
 <div className="container_card">
 <div className="card">
 <div className="container_title">
 <div className="card_title">
-<img className='card_title_icon' src="../../event_icon.svg" alt="icon" />
+<img className='card_title_icon' src={icon} alt="icon" />
 <p className='card_title_text'> {title} </p>
 </div>
 </div>

@@ -35,7 +35,8 @@ const Grants: React.FC = () => {
           list1={item.list1} 
           list2={item.list2} 
           list3={item.list3} 
-          list4={item.list4} />
+          list4={item.list4}
+          icon={item.icon}/>
          )
        })}
         </div>

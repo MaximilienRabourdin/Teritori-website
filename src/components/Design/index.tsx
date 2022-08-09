@@ -7,6 +7,16 @@ import './DesignStyled.css';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 
+import ColorCard from '../Cards/ColorCard';
+import 
+{ 
+  colorCardMain, 
+  colorCardGradients, 
+  colorCardNeutral, 
+  colorCardAdditional 
+} 
+  from '../../utils/data';
+
 const Design: React.FC = () => {
   return (
    <div className="design">
@@ -39,202 +49,53 @@ const Design: React.FC = () => {
           <div className="categorie_section">
           <p className='color_subtitle'>Main </p>
           <div className="color_section">
-          <div className="card_component">
-          <div className="color_card">
-          </div>
-          <p className="color_name">Primary</p>
-          <p className="color_code"> #16BBFF</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id='main_secondary'>
-          </div>
-          <p className="color_name">Secondary</p>
-          <p className="color_code"> #5C26F5</p>
-          </div>
-
-          <div className="card_component">
-          <div className="color_card" id='main_tertiary'>
-          </div>
-          <p className="color_name">Tertiary</p>
-          <p className="color_code"> #2B0945</p>
-          </div>
+          {colorCardMain.map(item => {
+            return(
+              <ColorCard
+              title={item.title}
+              describtion={item.description}
+              style={item.style} />
+            )
+          })}
           </div>
           </div>
           <div className="categorie_section">
           <p className='color_subtitle'>Gradients </p>
           <div className="color_section">
-          <div className="card_component">
-          <div className="color_card" id="grey_gradients">
-          </div>
-          <p className="color_name">Grey</p>
-          <p className="color_code">linear-gradient(90.12deg, #676767 2.11%, #B7B7B7 96.47%);</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id="primary_gradients">
-          </div>
-          <p className="color_name">Primary</p>
-          <p className="color_code"> linear-gradient(90deg, #5433FF 0%, #20BDFF 50%, #A5FECB 100%);</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id="secondary_gradients">
-          </div>
-          <p className="color_name">Secondary</p>
-          <p className="color_code"> linear-gradient(105.66deg, #01B7C5 -0.8%, #782C96 104.84%);</p>
-          </div>
+          {colorCardGradients.map(item => {
+            return(
+              <ColorCard
+              title={item.title}
+              describtion={item.description}
+              style={item.style} />
+            )
+          })}
           </div>
           </div>
           <div className="categorie_section">
           <p className='color_subtitle'>Neutral </p>
           <div className="color_section">
-          <div className="card_component">
-          <div className="color_card" id="zerozero_neutral">
-          </div>
-          <p className="color_name">00</p>
-          <p className="color_code"> #000000</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id="seventeen_neutral">
-          </div>
-          <p className="color_name">17</p>
-          <p className="color_code">#171717</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id="twentytwo_neutral">
-          </div>
-          <p className="color_name">22</p>
-          <p className="color_code"> #222222</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id="thirtythree_neutral">
-          </div>
-          <p className="color_name">33</p>
-          <p className="color_code"> #333333</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id="fourtyfour_neutral">
-          </div>
-          <p className="color_name">44</p>
-          <p className="color_code"> #444444</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id="fiftyfive_neutral">
-          </div>
-          <p className="color_name">55</p>
-          <p className="color_code"> #555555</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id="seventyseven_neutral">
-          </div>
-          <p className="color_name">77</p>
-          <p className="color_code"> #777777</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id="atree_neutral">
-          </div>
-          <p className="color_name">A3</p>
-          <p className="color_code"> #A3A3A3</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id="white_neutral">
-          </div>
-          <p className="color_name">White</p>
-          <p className="color_code"> #FFFFFF</p>
-          </div>
+          {colorCardNeutral.map(item => {
+            return(
+              <ColorCard
+              title={item.title}
+              describtion={item.description}
+              style={item.style} />
+            )
+          })}
           </div>
           </div>
           <div className="categorie_section">
           <p className='color_subtitle'>Additional </p>
           <div className="color_section">
-          <div className="card_component">
-          <div className="color_card" id='green_additional'>
-          </div>
-          <p className="color_name">green</p>
-          <p className="color_code"> #C8FFAE</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id='greentenpercent_additional'>
-          </div>
-          <p className="color_name">green 10%</p>
-          <p className="color_code"> #C8FFAE</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id='red_additional'>
-          </div>
-          <p className="color_name">red</p>
-          <p className="color_code"> #FFAEAE</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id='redtenpercent_additional'>
-          </div>
-          <p className="color_name">red 10%</p>
-          <p className="color_code"> #FFAEAE</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id='yellowdefault_additional'>
-          </div>
-          <p className="color_name">yellow / default</p>
-          <p className="color_code"> #FFE768</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id='yellowlight_additional'>
-          </div>
-          <p className="color_name">yellow / light</p>
-          <p className="color_code"> #FFE768</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id='orangedefault_additional'>
-          </div>
-          <p className="color_name">orange / default</p>
-          <p className="color_code">#EAA54B</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id='orangelight_additional'>
-          </div>
-          <p className="color_name">orange / light</p>
-          <p className="color_code">#EAA54B</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id='reddefault_additional'>
-          </div>
-          <p className="color_name">red / default</p>
-          <p className="color_code">#F46F76</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id='redlight_additional'>
-          </div>
-          <p className="color_name">red / light</p>
-          <p className="color_code">#F46F76</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id='pinkdefault_additional'>
-          </div>
-          <p className="color_name">pink / default</p>
-          <p className="color_code">#F46FBF</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id='pinklight_additional'>
-          </div>
-          <p className="color_name">pink / light</p>
-          <p className="color_code">#F46FBF</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id='purpledefault_additional'>
-          </div>
-          <p className="color_name">purple / default</p>
-          <p className="color_code">#9990F5</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id='purplelight_additional'>
-          </div>
-          <p className="color_name">purple / light</p>
-          <p className="color_code">#9990F5</p>
-          </div>
-          <div className="card_component">
-          <div className="color_card" id='darkbluedefault_additional'>
-          </div>
-          <p className="color_name">dark blue</p>
-          <p className="color_code">#2B2B33</p>
-          </div>
+          {colorCardAdditional.map(item => {
+            return(
+              <ColorCard
+              title={item.title}
+              describtion={item.description}
+              style={item.style} />
+            )
+          })}
           </div>
           </div>
         </div>
