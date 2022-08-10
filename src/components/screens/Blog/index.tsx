@@ -4,9 +4,9 @@ import React from 'react';
 import './BlogStyled.css';
 
 //import Header and Footer
-import Navbar from '../Navbar';
-import Footer from '../Footer';
-import Hero from '../Hero';
+import Navbar from '../../Navbar';
+import Footer from '../../Footer';
+import Hero from '../../Hero';
 
 const Blog: React.FC = () => {
   return (

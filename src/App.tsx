@@ -2,10 +2,10 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 
 // Components
-import Homepage from './components/Homepage';
-import Grants from './components/Grants';
-import Design from './components/Design';
-import Blog from './components/Blog';
+import Homepage from './components/screens/Homepage';
+import Grants from './components/screens/Grants';
+import Design from './components/screens/Design';
+import Blog from './components/screens/Blog';
 
 // Router -> import Link
 import { Routes, Route } from 'react-router-dom';

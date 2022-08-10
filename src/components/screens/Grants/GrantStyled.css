@@ -10,7 +10,7 @@
 }
 
 .title_background_block_grant{
-    background: url('../../../public/grants_background.png');
+    background: url('../../../../public/grants_background.png');
     background-color: black;
     background: cover;
     background-repeat: no-repeat;

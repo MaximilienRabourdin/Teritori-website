@@ -2,7 +2,11 @@ import React, { useState } from 'react'
 import './HeaderStyled.css'
 
 // Link for routes
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
+// import extern link
+import { discordLink, whitepaperLink, ecosystemLink, testnetLink } from '../../utils/const';
+
 
 const NavElem: React.FC<{ title: string; link: string }> = ({
   title,
@@ -27,12 +31,6 @@ const EnterTheDApp: React.FC = () => {
       </div>
   )
 }
-
-const gitbookLink = 'https://teritori.gitbook.io'
-const whitepaperLink = `${gitbookLink}/teritori-whitepaper`
-const testnetLink = `${whitepaperLink}/join-teritori-testnet`
-const ecosystemLink = `${whitepaperLink}/laboratori/incentivized-developper-ecosystem`
-const discordLink = 'https://discord.gg/teritori'
 
 const Header: React.FC = () => {
   return (

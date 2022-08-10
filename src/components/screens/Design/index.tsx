@@ -4,10 +4,10 @@ import React from 'react';
 import './DesignStyled.css';
 
 //import Header and Footer
-import Navbar from '../Navbar';
-import Footer from '../Footer';
+import Navbar from '../../Navbar';
+import Footer from '../../Footer';
 
-import ColorCard from '../Cards/ColorCard';
+import ColorCard from '../../Cards/ColorCard';
 import 
 { 
   colorCardMain, 
@@ -15,7 +15,7 @@ import
   colorCardNeutral, 
   colorCardAdditional 
 } 
-  from '../../utils/data';
+  from '../../../utils/data';
 
 const Design: React.FC = () => {
   return (
@@ -38,6 +38,7 @@ const Design: React.FC = () => {
       </ul>
       </div>
       </div>
+      <span className="ancres" id="colors" ></span>
       <div className="column_design_section">
       <div className="column_design">
         <div className="left_column">
@@ -101,9 +102,10 @@ const Design: React.FC = () => {
         </div>
       </div>
       {/* Color section end */}
-      <div className="column_design">
+      <span className="ancres" id="typography" ></span>
+      <div className="column_design" id='typography'>
         <div className="left_column">
-          <div className="left_column_text"> <p className='color_title' id='typography'>Typography </p>
+          <div className="left_column_text"> <p className='color_title' >Typography </p>
           <p className='color_description'> These are all of the core brand colors we use for Teritori projects. They are labeled and displayed with hex color values.</p>
         </div>
         </div>
@@ -161,6 +163,7 @@ const Design: React.FC = () => {
           </div>
         </div>
       </div>
+      <span className="ancres" id="design" ></span>
       <div className="column_design">
         <div className="left_column">
           <div className="left_column_text"> <p className='color_title' id='logo'>Logo, Mark </p>

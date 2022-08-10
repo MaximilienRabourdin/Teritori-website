@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 import './GrantStyled.css';
 
 //import card component 
-import CardGrant from '../Cards/CardGrants';
+import CardGrant from '../../Cards/CardGrants';
 
 //import Header and Footer
-import Navbar from '../Navbar';
-import Footer from '../Footer';
+import Navbar from '../../Navbar';
+import Footer from '../../Footer';
 
 
 // Data for cardGrant
-import { info } from '../../utils/data';
+import { info } from '../../../utils/data';
 
 const Grants: React.FC = () => {
   

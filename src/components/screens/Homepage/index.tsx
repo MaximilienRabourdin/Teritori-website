@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './HomeStyled.css';
 
 //import components
-import NavbarHomepage from '../NavbarHomepage';
-import Footer from '../Footer';
+import NavbarHomepage from '../../NavbarHomepage';
+import Footer from '../../Footer';
 
 // import extern link
-import { whitepaperLink, testnetLink } from '../../utils/const';
+import { whitepaperLink, testnetLink } from '../../../utils/const';
 
 
 const ButtonElem: React.FC<{

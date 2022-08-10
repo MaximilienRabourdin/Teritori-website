@@ -1,5 +1,4 @@
 import React, { CSSProperties } from 'react';
-import { Item } from 'semantic-ui-react';
 
 // Styled
 import './ColorCardDesignStyled.css';

@@ -50,7 +50,7 @@
 }
 
 .title_background_block_design{
-    background: url('../../../public/background_design.png');
+    background: url('../../../../public/background_design.png');
     background-color: black;
     background: cover;
     background-repeat: no-repeat;
@@ -855,6 +855,12 @@ padding:0px 0px 22px 0px;
     clip-path: polygon(10% 0, 100% 0, 100% 30%, 100% 89%, 90% 100%, 30% 100%, 0 100%, 0 10%);
 }
 
+.ancres{
+    display: block; 
+    height: 65px;  
+    margin-top: -65px;
+    visibility: hidden;}
+
 
 @media screen and (max-width: 768px) {
    
@@ -870,6 +876,8 @@ padding:0px 0px 22px 0px;
         height: 6rem;
         
     }
+    
+
 
     .column_design {
         height: 100%;

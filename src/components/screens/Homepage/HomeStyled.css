@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,600,700');
 
 .Home{
-  background: url('../../../public/background.svg');
+  background: url('../../../../public/background.svg');
   background-color: black;
   background-size: cover;
 }
@@ -121,7 +121,7 @@
   height: 48px;
   border-radius: 13px;
   width: 156px;
-  background: url('../../../public/button_borders.svg');
+  background: url('../../../../public/button_borders.svg');
   text-decoration: none;
   color: white;
   font-weight: 600;
