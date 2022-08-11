@@ -5,7 +5,7 @@ import './FooterStyled.css';
 import { discordLink, gitbookLink, mediumLink, twitterLink } from '../../utils/const';
 
 // import FooterData For column
-import { columnFooter } from '../../utils/data'
+import { columnFooter } from '../../utils/Data/data'
 
 //import FooterCard component
 import FooterCard from '../Cards/FooterCard'
@@ -39,6 +39,7 @@ const Footer: React.FC = () => {
   )
 })}
 
+</div>
 <div className="bottom_section">
   <div className="leftside_bottom_section">
     <img className='logo_footer' src="logo_title.png" alt="logo" />
@@ -56,8 +57,6 @@ const Footer: React.FC = () => {
         <FooterButton image="discord.svg" alt="Discord" link={discordLink} />
   </div>
 </div>
-</div>
-
     </div>
   );
 };

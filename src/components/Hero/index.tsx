@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
     <h1 className="Title_White"> Teritori </h1>
     <h2 className="second_title">Community Contributors MicroDesign</h2>
     </div>
-      </div>
+    </div>
  
   );
 };

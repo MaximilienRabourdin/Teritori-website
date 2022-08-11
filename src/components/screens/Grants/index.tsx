@@ -10,7 +10,7 @@ import Footer from '../../Footer';
 
 
 // Data for cardGrant
-import { info } from '../../../utils/data';
+import { info } from '../../../utils/Data/data';
 
 const Grants: React.FC = () => {
   

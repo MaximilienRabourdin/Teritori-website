@@ -28,16 +28,7 @@
     justify-content: center;
 }
 
-.blockText{
-    height:100%;
-    width: 100vw;
-    display: flex;
-    margin: 0 1rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
+
 
 .Title_White{
     color: white;
@@ -72,10 +63,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100vw;
     height: 100%;
     margin: auto;
-    padding: 3rem 0rem;
+    padding: 3rem 10%;
 }
 
 .card_block {

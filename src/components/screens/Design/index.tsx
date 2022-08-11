@@ -15,7 +15,7 @@ import
   colorCardNeutral, 
   colorCardAdditional 
 } 
-  from '../../../utils/data';
+  from '../../../utils/Data/data';
 
 const Design: React.FC = () => {
   return (

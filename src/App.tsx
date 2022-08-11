@@ -5,20 +5,22 @@ import './App.css';
 import Homepage from './components/screens/Homepage';
 import Grants from './components/screens/Grants';
 import Design from './components/screens/Design';
-import Blog from './components/screens/Blog';
+import Blog from './components/screens/Blog/BlogList';
 
 // Router -> import Link
 import { Routes, Route } from 'react-router-dom';
 
 const App: React.FC = () => { 
+
+
   return (
     <div className="App">
    
       <Routes>
-        <Route path='/' element={<Homepage />} />
+        <Route path='/'  element={<Homepage />} />
         <Route path='/grants' element={<Grants />} />
         <Route path='/design' element={<Design />}/>
-        <Route path='/blog' element={<Blog />}/>
+        <Route path='/blog/:id' element={<Blog />}/>
       </Routes>
     
     </div>

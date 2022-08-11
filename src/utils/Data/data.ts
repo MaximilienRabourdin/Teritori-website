@@ -52,6 +52,11 @@
 
     // Data for ColorCard End
 
+
+
+    
+
+
 //Footer column
 export const columnFooter = [
   { title: 'Learn', listone: 'Introduction', listtwo : 'Features', listthree: 'Staking', listfour: 'FAQ' },
