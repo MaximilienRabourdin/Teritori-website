@@ -4,18 +4,25 @@ import './BlogItemStyled.css';
 // Router -> import Link
 import { Route } from 'react-router-dom';
 
-
-const BlogItem: React.FC = () => { 
+const BlogItem: React.FC <{ 
     blog: {
-    description,
-    title,
-    createdAt,
-    authorName,
-    authorAvatar,
-    cover,
-    category,
-    id,
-}) => {
+    description: string,
+    title: string,
+    createdAt: string,
+    authorName: string,
+    authorAvatar: string,
+    cover: string,
+    category: string,
+    id: string
+}> = ({
+  blog,
+  title,
+  description,
+  createdAt,
+  authorName,
+  cover,
+  category,
+  id}) => {
   return (
     <div className='blogItem-wrap'>
          <img className='blogItem-cover' src={cover} alt='cover' />
