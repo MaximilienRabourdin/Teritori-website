@@ -3,10 +3,6 @@ import React from 'react';
 // Styled
 import './HeroStyled.css';
 
-//import Header and Footer
-import Navbar from '../Navbar';
-import Footer from '../Footer';
-
 const Hero: React.FC = () => {
   return (
     <div className="title_background">

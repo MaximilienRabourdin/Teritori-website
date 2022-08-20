@@ -1,6 +1,9 @@
 import React from 'react';
 import './cardgrantStyled.css';
 
+//import component
+import Button from '../../Button/button';
+
 const CardGrant: React.FC<{
   title: string,
   list1: string,
@@ -25,11 +28,7 @@ return (
 <li className='listName'>{list3}</li>
 <li className='listName'>{list4}</li>
 </div>
-<div className="card_button">
-<div className="container_button">
-<a className="card_button_link" href="#">Apply</a>
-</div>
-</div>
+<Button />
 </div>
 </div>
 )

@@ -1,5 +1,6 @@
 {
     "eslint.codeAction.showDocumentation": {
         "enable": false
-    }
+    },
+    "git.ignoreLimitWarning": true
 }

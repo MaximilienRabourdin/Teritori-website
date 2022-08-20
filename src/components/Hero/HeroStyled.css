@@ -1,11 +1,11 @@
 .title_background{
-    background: url('../../../public/team.jpeg');
+    background: url('../../../public/background_blog.png');
     background-color: black;
     background: cover;
     background-repeat: no-repeat;
     background-position-y: 44%;
     background-position-x: 55%;
-    height: 50vh;
+    height: 80vh;
     width: 100%;
 }
 
