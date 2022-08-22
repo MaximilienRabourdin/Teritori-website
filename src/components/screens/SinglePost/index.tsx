@@ -4,7 +4,7 @@ import './SinglePostStyled.css';
 
 // //components 
 import Navbar from '../../Navbar';
-// import Footer from '../../Footer';
+import Footer from '../../Footer';
 import Loading from '../../Loading';
 
 //import Link from
@@ -14,15 +14,15 @@ import { Link } from 'react-router-dom';
 import client from '../../../utils/client';
 
 //import SANITY.io
-import BlockContent from "@sanity/block-content-to-react";
-import imageUrlBuilder from '@sanity/image-url'
-import { SanityImageSource } from '@sanity/image-url/lib/types/types';
+// import BlockContent from "@sanity/block-content-to-react";
+// import imageUrlBuilder from '@sanity/image-url'
+// import { SanityImageSource } from '@sanity/image-url/lib/types/types';
 
 
-const builder = imageUrlBuilder(client);
-function urlFor(source: SanityImageSource) {
-  return builder.image(source);
-}
+// const builder = imageUrlBuilder(client);
+// function urlFor(source: SanityImageSource) {
+//   return builder.image(source);
+// }
 
 
 const Blogpost = {
@@ -33,14 +33,11 @@ const Blogpost = {
   mainImage: {asset: {url:''}}
 };
 
-const Categorypost = {
-  categories: {category: {name:''}}
-}
 
 const SinglePost: React.FC = () => {
 
     const [singlePost, setSinglePost] =  useState(Blogpost);
-    const [categories, setCategory] = useState(Categorypost)
+    // const [categories, setCategory] = useState([] as any[]);
     const [isLoading, setIsLoading] = useState(true);
     const {slug} = useParams()
 
@@ -52,9 +49,6 @@ const SinglePost: React.FC = () => {
             body,
             "name":author->name,
             "authorImage": author->image,
-            categories {
-              category -> {
-              name,
           },
             mainImage {
               asset -> {
@@ -69,17 +63,21 @@ const SinglePost: React.FC = () => {
         setIsLoading(false)
       }, [slug])
 
-      // We want to render the categorie blog
-     useEffect(() => {
-        client
-        .fetch(
-            `*[_type == "category"] {
-            title,
-        }`
-        )
-        .then((data) => setCategory(data))
-        .catch(console.error)
-    }, [])
+    //   // We want to render the categorie blog
+    //  useEffect(() => {
+    //     client
+    //     .fetch(
+    //         `*[_type == "category"] {
+    //         title,
+    //         categories {
+    //           category -> {
+    //           name
+    //           },
+    //     }`
+    //     )
+    //     .then((data) => setCategory(data))
+    //     .catch(console.error)
+    // }, [])
 
     return ( 
 
@@ -97,13 +95,14 @@ const SinglePost: React.FC = () => {
                 </button>
 
           <div className="titlesection_singlepost">
-            <div className="author_singlepost">
+
+            {/* <div className="author_singlepost">
             {categories.map((category) => (
            <div className = "flex flex-wrap justify-center">                                    
         <p>{category.title}</p>
        </div>
 ))}
-            </div>
+            </div> */}
 
               <h1 className='title_singlepost'>{singlePost.title}</h1>
                {singlePost.mainImage && singlePost.mainImage.asset && (
@@ -116,16 +115,16 @@ const SinglePost: React.FC = () => {
           </div>
 
           <div className="block__content">
-            <BlockContent
+            {/* <BlockContent
               blocks={singlePost.body}
               projectId="2hp9gld0"
               dataset="production"
-            />
+            /> */}
           </div>       
              </section>
                }
              </>
-        {/* <Footer /> */}
+        <Footer />
 </div>
     
     )
