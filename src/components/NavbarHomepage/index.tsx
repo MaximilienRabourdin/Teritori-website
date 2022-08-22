@@ -59,6 +59,11 @@ const NavbarHomepage: React.FC = () => {
             Hiring
           </a>
         </li>
+        <li className='nav__item'>
+          <a href='/blog' className='nav__link'>
+            Blog
+          </a>
+        </li>
       </ul>
       <li className='nav__item'>
         <a href='#' className='nav__link' id='enter_the_dap_burgermenu'>
