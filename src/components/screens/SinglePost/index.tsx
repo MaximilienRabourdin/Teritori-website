@@ -16,6 +16,13 @@ import client from '../../../utils/client';
 //import Sanity
 import BlockContent from '@sanity/block-content-to-react';
 
+// impor Share Button and Icons
+import { ShareButton } from "@types/react-custom-share";
+
+// import emotion
+
+import { FaBeer } from 'react-icons/fa'
+
 
 const Blogpost = {
   title: '',
@@ -50,6 +57,16 @@ const SinglePost: React.FC = () => {
       setIsLoading(false)
     }, [slug])
 
+
+    //create share button function
+const shareButtonProps = {
+  url: `*[slug.current == "${slug}"]`,
+  network: "Facebook",
+  text: "Give it a try - react-custom-share component",
+  longtext:
+    "Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch."
+};
+
     return ( 
 
 <div className="all_singlepost">
@@ -78,11 +95,21 @@ const SinglePost: React.FC = () => {
                )}
 
           <BlockContent
+              className='text_content'
               blocks={singlePost.body}
               projectId="dsp47i30"
               dataset="production"
             />
           </div>
+
+          <div className="sharebutton_section">
+          <ShareButton {...shareButtonProps}>
+          <FaBeer />
+          </ShareButton>
+          </div>
+
+      
+
 
              </section>
                }

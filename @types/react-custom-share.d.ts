@@ -1,9 +1,9 @@
 
-declare module "@sanity/block-content-to-react"
+declare module "react-custom-share"
 {
  import * as React from "react"
 
- export interface BlockContentProps {
+ export interface ShareButton {
    /**
     * Pass in either an array or a single object of [Portable Text](https://github.com/portabletext/portabletext)
     *
@@ -117,5 +117,5 @@ declare module "@sanity/block-content-to-react"
  }
 
  /** React component for transforming Sanity block content to React components */
- export default function BlockContent(props: BlockContentProps): JSX.Element
+ export default function ShareButton(props: ShareButton): JSX.Element
 }

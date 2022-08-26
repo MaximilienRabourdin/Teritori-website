@@ -6,6 +6,8 @@
     width: 100%;
     display:flex;
     flex-direction: column;
+    align-items: center;
+    align-content: center;
     justify-content: center !important;
 }
 
@@ -14,6 +16,11 @@
     background-color: black;
     background: cover;
     background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center !important;
     background-position-y: 44%;
     background-position-x: 55%;
     height: 50vh;

@@ -53,15 +53,11 @@
     // Data for ColorCard End
 
 
-
-    
-
-
 //Footer column
 export const columnFooter = [
   { title: 'Learn', listone: 'Introduction', listtwo : 'Features', listthree: 'Staking', listfour: 'FAQ' },
-  { title: 'Build', listone: 'Developer Portal', listtwo : 'Teritori SDK', listthree: 'Protocol', listfour: 'CLI', icon:'arrow_footer.svg'},
-  { title: 'Explore', listone: 'Tokens', listtwo : 'Apps & Services', listthree: 'Wallets', listfour: 'Protocol', icon:'arrow_footer.svg' },
-  { title: 'Participate', listone: 'Community ', listtwo : 'Contributors', listthree: 'Events', listfour: 'Newsletters', icon:'arrow_footer.svg' },
-  { title: 'Resources', listone: 'About', listtwo : 'Press kit', listthree: 'Design', listfour: 'Ressources', icon:'arrow_footer.svg'  },
+  { title: 'Build', listone: 'Developer Portal', listtwo : 'Teritori SDK', listthree: 'Protocol', listfour: 'CLI', icon:'/public/arrow_footer.svg'},
+  { title: 'Explore', listone: 'Tokens', listtwo : 'Apps & Services', listthree: 'Wallets', listfour: 'Protocol', icon:'/public/arrow_footer.svg' },
+  { title: 'Participate', listone: 'Community ', listtwo : 'Contributors', listthree: 'Events', listfour: 'Newsletters', icon:'/public/arrow_footer.svg' },
+  { title: 'Resources', listone: 'About', listtwo : 'Press kit', listthree: 'Design', listfour: 'Ressources', icon:'/public/arrow_footer.svg'  },
 ]

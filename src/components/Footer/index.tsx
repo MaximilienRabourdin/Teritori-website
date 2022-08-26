@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
 </div>
 <div className="bottom_section">
   <div className="leftside_bottom_section">
-    <img className='logo_footer' src="logo_title.png" alt="logo" />
+    <img className='logo_footer' src="/logo_title.png" alt="logo" />
     <a className='term_privacy'> Terms & Privacy </a>
   </div>
   <div className="middle_bottom_section">
@@ -51,10 +51,10 @@ const Footer: React.FC = () => {
     </p>
   </div>
   <div className="right_bottom_section">
-        <FooterButton image="gitbook.svg" alt="GitBook" link={gitbookLink} />
-        <FooterButton image="medium.svg" alt="Medium" link={mediumLink} />
-        <FooterButton image="twitter.svg" alt="Twitter" link={twitterLink} />
-        <FooterButton image="discord.svg" alt="Discord" link={discordLink} />
+        <FooterButton image="/gitbook.svg" alt="GitBook" link={gitbookLink} />
+        <FooterButton image="/medium.svg" alt="Medium" link={mediumLink} />
+        <FooterButton image="/twitter.svg" alt="Twitter" link={twitterLink} />
+        <FooterButton image="/discord.svg" alt="Discord" link={discordLink} />
   </div>
 </div>
     </div>

@@ -6,7 +6,7 @@ import './BlogStyled.css';
 //components 
 import Navbar from '../../Navbar';
 import Footer from '../../Footer';
-import Hero from '../../Hero';
+
 
 //import Link from
 import { Link } from 'react-router-dom';
@@ -15,7 +15,6 @@ import { Link } from 'react-router-dom';
 import client from '../../../utils/client';
 
 //Sanity.io import
-import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 import { SanityImageSource } from '@sanity/image-url/lib/types/types';
 
@@ -57,16 +56,22 @@ return (
 
 
     <div className="all_blog">
-        <Hero />
+    <div className="title_background_blog">
+    <div className="blockText_blog"id='menu'>
+    <img src="logo.svg" alt="Logo" className="white_logo" />
+    <h1 className="Title_White_blog"> Teritori Blog</h1>
+    <h2 className="second_title_blog">News, updates and podcasts</h2>
+    </div>
+    </div>
     <section>
-    <h3 className='title_blog'> BLOG</h3>
+    
 
         <div className='all_articles'>
             {posts.map((post) => (
                 <article className='article' key={post.slug.current}>
                     <img className='img_article' src={post.mainImage.asset.url} />
                     <h4 className='title_article'>{post.title}</h4>
-                    <p className='time_read'>3min read</p>
+                    <p className='time_read'>3 min read</p>
                     <div className="description_post">
                     <div className="sectiontop">
                     <img className='img_author_post'

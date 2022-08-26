@@ -20,19 +20,19 @@ const FooterCard: React.FC<{
           <ul className='all_item_column'>
             <li >
               <a className='item_column' href="#">{listone}</a>
-              <img src="arrow_footer.svg" alt="icon" />
+              <img src="/arrow_footer.svg" alt="icon" />
             </li>
             <li >
               <a className='item_column' href="#">{listtwo}</a>
-              <img src="arrow_footer.svg" alt="icon" />
+              <img src="/arrow_footer.svg" alt="icon" />
             </li>
             <li >
               <a className='item_column' href="#">{listthree}</a>
-              <img src="arrow_footer.svg" alt="icon" />
+              <img src="/arrow_footer.svg" alt="icon" />
             </li>
             <li >
               <a className='item_column' href="#">{listfour}</a>
-              <img src="arrow_footer.svg" alt="icon" />
+              <img src="/arrow_footer.svg" alt="icon" />
             </li>
           </ul>
         </div>

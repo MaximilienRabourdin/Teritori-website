@@ -22,8 +22,11 @@
     "jsx": "react-jsx"
   },
   "files": [
-    "@types/block-content-to-react.d.ts"
+    "@types/react_custom_share.d.ts",
+    "@types/block-content-to-react.d.ts",
+    "@types/react-custom-share"
   ],
+  
   "include": [
     "src"
   ]
