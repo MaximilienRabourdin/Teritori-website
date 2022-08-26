@@ -124,7 +124,7 @@ const shareButtonProps = {
           </div>
 
           <div className="sharebutton_section">
-          <TwitterShareButton url={`/blog/${slug}`}>
+          <TwitterShareButton url={`https://capable-sfogliatella-e97b41.netlify.app/blog/intro/${slug}`}>
           <img className='twitter-icon_singleblog' src="/twitter.svg" alt="Twitter" />
           </TwitterShareButton>
 
