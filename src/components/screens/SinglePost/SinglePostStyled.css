@@ -99,7 +99,16 @@ color: rgb(22, 187, 255)
 }
 
 .sharebutton_section{
-    background-color: white;
-    color: white;
-    padding:4rem;
+    width: 100%;
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top:1px solid #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.twitter-icon_singleblog {
+    font-size: 32px;
 }

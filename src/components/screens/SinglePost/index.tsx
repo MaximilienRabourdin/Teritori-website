@@ -17,8 +17,29 @@ import client from '../../../utils/client';
 import BlockContent from '@sanity/block-content-to-react';
 
 // impor Share Button and Icons
-import { ShareButton } from "@types/react-custom-share";
-
+import {
+  EmailShareButton,
+  FacebookShareButton,
+  FacebookShareCount,
+  HatenaShareButton,
+  InstapaperShareButton,
+  LineShareButton,
+  LinkedinShareButton,
+  LivejournalShareButton,
+  MailruShareButton,
+  OKShareButton,
+  PinterestShareButton,
+  PocketShareButton,
+  RedditShareButton,
+  TelegramShareButton,
+  TumblrShareButton,
+  TwitterIcon,
+  TwitterShareButton,
+  ViberShareButton,
+  VKShareButton,
+  WhatsappShareButton,
+  WorkplaceShareButton
+} from "react-share";
 // import emotion
 
 import { FaBeer } from 'react-icons/fa'
@@ -103,14 +124,14 @@ const shareButtonProps = {
           </div>
 
           <div className="sharebutton_section">
-          <ShareButton {...shareButtonProps}>
-          <FaBeer />
-          </ShareButton>
+          <TwitterShareButton url={`/blog/${slug}`}>
+          <img className='twitter-icon_singleblog' src="/twitter.svg" alt="Twitter" />
+          </TwitterShareButton>
+
+          <TelegramShareButton url={`${slug}`}>
+          <img className='twitter-icon_singleblog' src="/telegram-logo-light.svg" alt="Twitter" />
+          </TelegramShareButton>
           </div>
-
-      
-
-
              </section>
                }
              </>
