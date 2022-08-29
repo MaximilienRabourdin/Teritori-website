@@ -22,7 +22,7 @@
 }
 
 .article{
-    width: 30%;
+    max-width: 30%;
     height: 450px; 
     margin: 10px;
     border-radius: 10px;
