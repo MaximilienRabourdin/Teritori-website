@@ -23,7 +23,7 @@ flex-direction: row;
   height: 100%;
   border-top: 1px solid #333333;
   display: flex;
-  padding:2rem 5rem;
+  padding:2rem 6rem;
   align-content: center;
   align-items: center;
   justify-content: space-between;
@@ -32,7 +32,6 @@ flex-direction: row;
 
 .leftside_bottom_section{
   display: flex; 
-  padding-left: 4rem;
   height:100%;
   width: 1/3;
   align-content: center;
@@ -67,7 +66,7 @@ flex-direction: row;
   display: flex;
   justify-content: center;
   width: 1/3;
-  padding-right: 4rem;
+  
 }
 
 .FooterButton {

@@ -10,10 +10,21 @@
     flex-direction: column;
 }
 
-.all_articles {
+.article_section{
     height:100%;
     width: 100%;
-    padding: 2rem 0rem;
+    padding-top:1rem;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.all_articles {
+    width: 80%;
+    margin: 0% 10%;
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
@@ -129,6 +140,8 @@
     background: url('../../../../public/hero_blog.png');
     background-color: black;
     background: cover;
+    background-image: linear-gradient(circle, rgba(225,231,238,0.7175245098039216) 100%, rgba(225,231,238,0.40940126050420167) 100%);
+
     background-repeat: no-repeat;
     background-position-y: 44%;
     background-position-x: 55%;

@@ -18,6 +18,11 @@ export default {
       },
     },
     {
+      title: 'time',
+      name: 'timeToRead',
+      type: 'number'
+    },
+    {
       name: 'author',
       title: 'Author',
       type: 'reference',

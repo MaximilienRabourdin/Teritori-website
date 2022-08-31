@@ -35,6 +35,7 @@ useEffect(() => {
             title,
             slug,
             body,
+            time,
             "name":author->name,
             "authorImage": author->image,
             mainImage {
@@ -65,13 +66,14 @@ return (
     </div>
     <section>
     
-
+        <div className="article_section">
         <div className='all_articles'>
             {posts.map((post) => (
                 <article className='article' key={post.slug.current}>
+                    <Link className='link_article' to={`/blog/${post.slug.current}`}>
                     <img className='img_article' src={post.mainImage.asset.url} />
                     <h4 className='title_article'>{post.title}</h4>
-                    <p className='time_read'>3 min read</p>
+                    <p className='time_read'>{post.time}</p>
                     <div className="description_post">
                     <div className="sectiontop">
                     <img className='img_author_post'
@@ -87,10 +89,10 @@ return (
                     </button>
                     </div>
                     </div> 
-
+                    </Link>
                 </article>
-
             ))}
+        </div>
         </div>
     </section>
     

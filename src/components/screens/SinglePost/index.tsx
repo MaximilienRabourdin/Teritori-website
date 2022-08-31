@@ -49,6 +49,7 @@ const Blogpost = {
   title: '',
   body: '',
   name: '',
+  time: '',
   mainImage: {asset: {url:''}}
 };
 
@@ -65,6 +66,7 @@ const SinglePost: React.FC = () => {
           `*[slug.current == "${slug}"] {
           title,
           body,
+          time,
           mainImage {
             asset -> {
               _id,
@@ -99,7 +101,7 @@ const shareButtonProps = {
              <section className='section_singlepost'>
               <button className='btnback_article'>
                 <Link className='link_article' to="/blog">
-                  ↩  Read Full Articles
+                  ↩  Back to blog
                 </Link>
                 </button>
 
@@ -127,10 +129,6 @@ const shareButtonProps = {
           <TwitterShareButton url={`https://capable-sfogliatella-e97b41.netlify.app/blog/${slug}`}>
           <img className='twitter-icon_singleblog' src="/twitter.svg" alt="Twitter" />
           </TwitterShareButton>
-
-          <TelegramShareButton url={`${slug}`}>
-          <img className='twitter-icon_singleblog' src="/telegram-logo-light.svg" alt="Twitter" />
-          </TelegramShareButton>
           </div>
              </section>
                }

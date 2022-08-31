@@ -6,7 +6,7 @@
     background-color: #2B2B33;
     display: flex;
     border-radius: 0px 14px 0px;
-    border: 0;
+    
     clip-path: polygon(20% 0%, 100% 0, 100% 71%, 80% 98%, 0 100%, 0% 30%);
 }
 

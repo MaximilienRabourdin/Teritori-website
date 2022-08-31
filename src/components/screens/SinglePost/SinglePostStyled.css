@@ -49,13 +49,13 @@ color: rgb(22, 187, 255)
 
 .btnback_article{
     background-color: #333333;
-    width: 165px;
+    width: 140px;
     height: 40px;
     padding: 1rem 2rem;
     margin: 0rem 2rem 2rem 0rem;
-    border-radius: 10px;
     display: flex;
     justify-content: flex-start;
+    clip-path: polygon(100% 0, 100% 0, 100% 89%, 88% 100%, 0 98%, 0 12%);
 
 }
 
@@ -72,11 +72,10 @@ color: rgb(22, 187, 255)
 }
 
 .title_singlepost{
-    background: linear-gradient(to right, #2AF598, #009EFD);
+    background-color: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-bottom:4rem;
-    
+    padding-bottom: 4rem;    
 }
 
 .img_singlepost {
@@ -106,9 +105,9 @@ color: rgb(22, 187, 255)
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    
 }
 
 .twitter-icon_singleblog {
     font-size: 32px;
+    width: 25px;
 }
