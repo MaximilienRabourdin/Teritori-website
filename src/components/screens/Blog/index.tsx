@@ -17,6 +17,7 @@ import client from '../../../utils/client';
 //Sanity.io import
 import imageUrlBuilder from "@sanity/image-url";
 import { SanityImageSource } from '@sanity/image-url/lib/types/types';
+import TertiaryBox from '../../Boxes/TertiaryBox';
 
 const builder = imageUrlBuilder(client);
 function urlFor(source: SanityImageSource) {
@@ -64,12 +65,17 @@ return (
     <h2 className="second_title_blog">News, updates and podcasts</h2>
     </div>
     </div>
-    <section>
+    <section >
     
         <div className="article_section">
         <div className='all_articles'>
             {posts.map((post) => (
+                
                 <article className='article' key={post.slug.current}>
+                      <TertiaryBox 
+                    squaresBackgroundColor="#000000" 
+                    style={{
+}}>
                     <Link className='link_article' to={`/blog/${post.slug.current}`}>
                     <img className='img_article' src={post.mainImage.asset.url} />
                     <h4 className='title_article'>{post.title}</h4>
@@ -83,13 +89,9 @@ return (
                     {post.name}
                     </h4>
                     </div>
-                    <div className="sectionbottom">
-                    <button className='button_article'>
-                    <Link  className='link_article' to={`/blog/${post.slug.current}`}> Know more</Link>
-                    </button>
-                    </div>
                     </div> 
                     </Link>
+                    </TertiaryBox>
                 </article>
             ))}
         </div>

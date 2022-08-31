@@ -18,31 +18,10 @@ import BlockContent from '@sanity/block-content-to-react';
 
 // impor Share Button and Icons
 import {
-  EmailShareButton,
-  FacebookShareButton,
-  FacebookShareCount,
-  HatenaShareButton,
-  InstapaperShareButton,
-  LineShareButton,
-  LinkedinShareButton,
-  LivejournalShareButton,
-  MailruShareButton,
-  OKShareButton,
-  PinterestShareButton,
-  PocketShareButton,
-  RedditShareButton,
-  TelegramShareButton,
-  TumblrShareButton,
-  TwitterIcon,
-  TwitterShareButton,
-  ViberShareButton,
-  VKShareButton,
-  WhatsappShareButton,
-  WorkplaceShareButton
+ TwitterShareButton,
 } from "react-share";
-// import emotion
-
-import { FaBeer } from 'react-icons/fa'
+import {PrimaryBox} from '../../Boxes/PrimaryBox';
+import TertiaryBox from '../../Boxes/TertiaryBox';
 
 
 const Blogpost = {
@@ -98,12 +77,21 @@ const shareButtonProps = {
               <LoadingFullScreen />
     //      if it's not loading show all components  
              :
-             <section className='section_singlepost'>
+        
+             <PrimaryBox 
+             mainContainerStyle={{padding: "6rem", backgroundColor: '#0f0f0f',}} style={{margin: "0 2rem 2rem 0", width: "60%", height: "90%", }} >   
+              <>
               <button className='btnback_article'>
+              <TertiaryBox 
+              squaresBackgroundColor="#0f0f0f" 
+              mainContainerStyle={{padding: "1rem 2rem"}} 
+              style={{margin: "0 2rem 2rem 0"}}>
                 <Link className='link_article' to="/blog">
                   ↩  Back to blog
                 </Link>
+                </TertiaryBox>
                 </button>
+            
 
           <div className="titlesection_singlepost">
               <h1 className='title_singlepost'>{singlePost.title}</h1>
@@ -130,7 +118,8 @@ const shareButtonProps = {
           <img className='twitter-icon_singleblog' src="/twitter.svg" alt="Twitter" />
           </TwitterShareButton>
           </div>
-             </section>
+          </>
+          </PrimaryBox>
                }
              </>
         <Footer />
