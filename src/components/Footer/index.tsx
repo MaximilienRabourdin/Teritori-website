@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
         <FooterButton image="/twitter.svg" alt="Twitter" link={twitterLink} />
         <FooterButton image="/discord.svg" alt="Discord" link={discordLink} />
   </div>
-</div>
+  </div>
     </div>
   );
 };

@@ -55,8 +55,6 @@ useEffect(() => {
 return (  
 <div className="blog">
 <Navbar />
-
-
     <div className="all_blog">
     <div className="title_background_blog">
     <div className="blockText_blog"id='menu'>

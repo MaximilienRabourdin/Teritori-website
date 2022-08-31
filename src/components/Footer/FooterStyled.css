@@ -13,8 +13,9 @@
 
 .allcolumn_section {
 width: 100vw;
+padding: 2rem 6rem;
 display: flex;
-justify-content: space-evenly;
+justify-content: space-between;
 flex-wrap: wrap;
 flex-direction: row;
 }
@@ -29,6 +30,8 @@ flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+
 
 .leftside_bottom_section{
   display: flex; 
