@@ -46,7 +46,20 @@ useEffect(() => {
                 },
                 alt
             }
-        }`
+        }`,
+        `*[
+            _type == "post"
+          ]{
+            title,
+            "numberOfCharacters": length(pt::text(body)),
+            // assumes 5 characters as mean word length
+            // https://ux.stackexchange.com/questions/22520/how-long-does-it-take-to-read-x-number-of-characters
+            "estimatedWordCount": round(length(pt::text(body)) / 5),
+            // Words per minute: 180
+            "estimatedReadingTime": round(length(pt::text(body)) / 5 / 180 )
+          }
+          
+          `
     )
     .then((data) => setPosts(data))
     .catch(console.error)
