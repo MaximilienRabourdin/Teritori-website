@@ -3,6 +3,8 @@ import './cardgrantStyled.css';
 
 //import component
 import Button from '../../Button/button';
+import { PrimaryBox } from '../../Boxes/PrimaryBox';
+import TertiaryBox from '../../Boxes/TertiaryBox';
 
 const CardGrant: React.FC<{
   title: string,
@@ -13,7 +15,8 @@ const CardGrant: React.FC<{
   icon: string,
 }> = ({title, list1, list2, list3, list4, icon}) => { 
 return (
-      
+
+<TertiaryBox style={{margin:'10px'}}>
 <div className="container_card">
 <div className="card">
 <div className="container_title">
@@ -31,6 +34,7 @@ return (
 <Button />
 </div>
 </div>
+</TertiaryBox>
 )
 } 
 

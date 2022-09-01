@@ -70,10 +70,7 @@ return (
             {posts.map((post) => (
                 
                 <article className='article' key={post.slug.current}>
-                      <TertiaryBox 
-                    squaresBackgroundColor="#000000" 
-                    style={{
-}}>
+                      <TertiaryBox squaresBackgroundColor="#000000" >
                     <Link className='link_article' to={`/blog/${post.slug.current}`}>
                     <img className='img_article' src={post.mainImage.asset.url} />
                     <h4 className='title_article'>{post.title}</h4>

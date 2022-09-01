@@ -17,7 +17,6 @@ const Grants: React.FC = () => {
   return (
    <div className="grant">
      <Navbar />
-     <div className="all_grant">
       <div className="title_background_block_grant">
       <div className="blockText">
       <img src="logo.svg" alt="Logo" className="white_logo" />
@@ -40,7 +39,6 @@ const Grants: React.FC = () => {
          )
        })}
         </div>
-      </div>
       </div>
       <Footer />
    </div>

@@ -39,6 +39,11 @@ const SinglePost: React.FC = () => {
     const [isLoading, setIsLoading] = useState(true);
     const {slug} = useParams()
 
+
+    
+    //create share button function. Everything is connect to the slug.
+    //  We fecth GROQ JSON from Sanity. 
+
     useEffect(() => {
       client
         .fetch(
@@ -59,15 +64,6 @@ const SinglePost: React.FC = () => {
       setIsLoading(false)
     }, [slug])
 
-
-    //create share button function
-const shareButtonProps = {
-  url: `*[slug.current == "${slug}"]`,
-  network: "Facebook",
-  text: "Give it a try - react-custom-share component",
-  longtext:
-    "Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch."
-};
 
     return ( 
 
@@ -113,6 +109,7 @@ const shareButtonProps = {
             />
           </div>
 
+          
           <div className="sharebutton_section">
           <TwitterShareButton url={`https://capable-sfogliatella-e97b41.netlify.app/blog/${slug}`}>
           <img className='twitter-icon_singleblog' src="/twitter.svg" alt="Twitter" />

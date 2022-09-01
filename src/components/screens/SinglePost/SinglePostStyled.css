@@ -74,6 +74,8 @@ a{
     font-size: 14px;
 }
 
+/* To change style text of BlockContent => u can use CSS or use Sanity */
+
 .text_content{
     font-size: 16px;
     line-height: 28px;
