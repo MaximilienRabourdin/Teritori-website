@@ -9,7 +9,8 @@ squaresBackgroundColor?: string;
 	style,
 	mainContainerStyle,
 	children,
-	squaresBackgroundColor = "#000000"
+	squaresBackgroundColor = "#000000",
+	
 }) => {
 
 return (

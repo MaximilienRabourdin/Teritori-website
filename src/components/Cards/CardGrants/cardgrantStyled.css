@@ -1,5 +1,5 @@
 .container_card{
-    width: 20vw;
+    width: 434px;
     height: 281px;
     border-top:none;
 }
@@ -14,8 +14,9 @@
     height:64px;
     width: 100%;
     align-items: center;
+    border: 1px 0px 2px 0px solid #333333; 
     background-color:#171717;
-    border-radius: 0px 10px 0px;
+    border-radius: 0px 11px 0px;
     clip-path: polygon(4% 0, 100% 0, 100% 30%, 100% 78%, 95% 100%, 0 100%, 0% 70%, 0 7%);
 }
 
@@ -24,7 +25,10 @@
     height:64px;
     align-items: center;
     padding: 1rem 1.4rem;
+    border: 1px 0px 2px 0px solid #333333; 
     background-color:#171717;
+    border-radius: 0px 11px 0px;
+    clip-path: polygon(4% 0, 100% 0, 100% 11%, 100% 95%, 95% 100%, 14% 100%, 0 100%, 0 6%);   
 }
 
 .card_title_icon {
