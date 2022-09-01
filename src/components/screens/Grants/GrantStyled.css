@@ -63,7 +63,7 @@
 }
 
 .galerie{
-    height: 100%;
+  height: 100%;
     width: 100%;
     padding-bottom:1.5rem;
     background-color: black;
@@ -71,17 +71,16 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
 }
 
 .all_container {
-    height:100%;
-    width: 80vw;
-    padding-top:1.5rem;
-    flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100%;
+    margin: auto;
+    padding: 3rem 10%;
 }
 
 .card_block {
