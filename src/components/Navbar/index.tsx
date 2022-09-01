@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className='nav'>
       <a href='/' className='nav__brand'>
-       <img src="/logo header.png" alt="logo" />
+       <img src="./logo_header.svg" alt="logo" />
       </a>
       <ul className={active}>
         <li className='nav__item'>
