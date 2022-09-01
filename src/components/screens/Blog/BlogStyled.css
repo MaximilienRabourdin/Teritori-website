@@ -47,6 +47,7 @@
 .title_article{
     width: 100%;
     color:white;
+    font-size:18px;
     padding:1.4rem 2rem 1rem 2rem;
     align-items: center;
     align-content: center;
@@ -85,11 +86,15 @@
 
 .authorname_post{
     color:white;
+    font-size:15px;
+
 }
 
 .img_author_post{
-    width: 20%;
-    margin: 0rem 2rem 0rem 0rem;
+    height:42px;
+    width:42px;
+    border: 1px solid #333;
+    border-radius: 360px;    margin: 0rem 2rem 0rem 0rem;
 }
 
 .sectionbottom{
@@ -100,7 +105,9 @@
     justify-content: flex-end;
 }
 
-
+a {
+    text-decoration: none;
+}
 
 /* Hero Section */
 .title_background_blog{

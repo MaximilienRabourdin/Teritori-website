@@ -21,6 +21,11 @@ meta{
 color: rgb(22, 187, 255)
 }
 
+a{
+    text-decoration:none;
+    color:#FFFFFF;
+}
+
 .all_singlepost{
     width: 100%;
     height: 100%;
