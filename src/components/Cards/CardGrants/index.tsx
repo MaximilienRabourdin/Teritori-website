@@ -5,6 +5,8 @@ import './cardgrantStyled.css';
 import Button from '../../Button/button';
 import { PrimaryBox } from '../../Boxes/PrimaryBox';
 import TertiaryBox from '../../Boxes/TertiaryBox';
+import TriangleBox from '../../Boxes/TriangleBox';
+import { NONAME } from 'dns';
 
 const CardGrant: React.FC<{
   title: string,
@@ -16,15 +18,20 @@ const CardGrant: React.FC<{
 }> = ({title, list1, list2, list3, list4, icon}) => { 
 return (
 
-<TertiaryBox style={{margin:'10px'}}>
+<TertiaryBox 
+style={{margin:'10px', borderTop: 'none'}}
+mainContainerStyle={{padding: "0rem", borderTop: 'none'}}>
 <div className="container_card">
 <div className="card">
-<div className="container_title">
+<TertiaryBox  
+    mainContainerStyle={{borderLeft: 'none', borderRight:'none'}}
+    style={{width:7}} 
+    >
 <div className="card_title">
 <img className='card_title_icon' src={icon} alt="icon" />
 <p className='card_title_text'> {title} </p>
 </div>
-</div>
+</TertiaryBox>
 <div className="cardList">
 <li className='listName'>{list1}</li>
 <li className='listName'>{list2}</li>

@@ -2,39 +2,22 @@
 .card_button {
     height: 44px;;
     width: 78px;
-    margin-left:2rem;
-    background-color: #2B2B33;
     display: flex;
-    border-radius: 0px 14px 0px;
-    
-    clip-path: polygon(20% 0%, 100% 0, 100% 71%, 80% 98%, 0 100%, 0% 30%);
+    border: none;
+    background-color: #2B2B33;
+    border-radius: 10px;
 }
 
 
 .container_button {
     height: 42px;;
     width: 75px;
-    border-radius: 0px 14px 0px;
-    clip-path: polygon(4% 0, 100% 0, 100% 11%, 100% 95%, 95% 100%, 14% 100%, 0 100%, 0 6%);   
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #333333;
-    --corner: 2em;
-    clip-path: polygon(4% 0, 100% 0, 100% 11%, 100% 95%, 95% 100%, 14% 100%, 0 100%, 0 6%);
-    }
-
+}
 
 .card_button_link{
-    color:#18A9E6;
-    text-decoration: none;
-    border-radius: 0px 14px 0px;
-    clip-path: polygon(4% 0, 100% 0, 100% 11%, 100% 95%, 95% 100%, 14% 100%, 0 100%, 0 6%);   
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 16px;
-    font-family: Exo;
-    align-items:center;
-    align-content: center;
-    
+    color: #16BBFF;
+
 }

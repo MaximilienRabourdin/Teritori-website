@@ -1,6 +1,6 @@
 import React, {CSSProperties, ReactElement} from "react"
 
-const TertiaryBox: React.FC<{
+const TriangleBox: React.FC<{
 children: ReactElement;
 style?: CSSProperties;
 mainContainerStyle?: CSSProperties;
@@ -26,7 +26,7 @@ style={Object.assign({
 {/* ---- Content container */}
 <div style={Object.assign(
 	{
-			border: "1px solid #333333",
+			borderBottom: "1px solid #333333",
 			borderRadius: 10,
 			display: "flex",
 			flexDirection: "column",
@@ -34,7 +34,6 @@ style={Object.assign({
 			width: "fit-content",
 			height: "fit-content",
 			position: "relative",
-			zIndex: "999"
 	}, mainContainerStyle
 )}>
 
@@ -58,21 +57,22 @@ style={Object.assign({
 
 	{/* ---- Bottom right corner*/}
 	<div
-			style={{
+	style={{
 					position: "absolute",
 					zIndex: 2,
 					borderRight: "1px solid #333333",
 					backgroundColor: squaresBackgroundColor,
-					width: 10,
+					width: 8,
 					height: 18,
 					right: 0,
 					bottom: -6,
 					transform: "rotate(230deg)"
 			}}
 	/>
+	
 </div>
 </div>
 )
 }
 
-export default TertiaryBox
+export default TriangleBox

@@ -5,8 +5,9 @@
 }
 .card{
     width: 100%;
-    height: 280px;
+    height: 270px;
     background-color: black ;
+    border-top: none;
 }
 
 .container_title{
@@ -14,21 +15,18 @@
     height:64px;
     width: 100%;
     align-items: center;
-    border: 1px 0px 2px 0px solid #333333; 
     background-color:#171717;
-    border-radius: 0px 11px 0px;
-    clip-path: polygon(4% 0, 100% 0, 100% 30%, 100% 78%, 95% 100%, 0 100%, 0% 70%, 0 7%);
 }
 
 .card_title{
     display: flex;
     height:64px;
+    width: 433px;
     align-items: center;
     padding: 1rem 1.4rem;
-    border: 1px 0px 2px 0px solid #333333; 
+    border: none;
+    border-radius: 10px;
     background-color:#171717;
-    border-radius: 0px 11px 0px;
-    clip-path: polygon(4% 0, 100% 0, 100% 11%, 100% 95%, 95% 100%, 14% 100%, 0 100%, 0 6%);   
 }
 
 .card_title_icon {
@@ -51,7 +49,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 1.4rem 2rem; 
+    padding:1.4rem 3rem;
     line-height: 2.8rem;
 }
 

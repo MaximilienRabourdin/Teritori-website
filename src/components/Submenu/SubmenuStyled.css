@@ -6,9 +6,12 @@
     padding: 0;
 }
 
+
+
 .dropdownmenu ul, .dropdownmenu li {
 	margin: 0;
 	padding: 0;
+	
 }
 .dropdownmenu ul {
 	background: gray;
@@ -47,6 +50,9 @@
 	top: 35px;
 	visibility: hidden;
 	z-index: 1;
+	padding: 0rem 1rem 1rem;
+  	border-radius:6px;
+  	background:#000;
 }
 
 

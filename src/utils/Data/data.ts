@@ -1,11 +1,8 @@
   // Data for cardGrant
   export const info = [
-    { title: "Build someting", list1: "Build an intergration", list2: "Translate documentation", list3: "Create tutorials", list4:"Other contributions", button:"Apply", icon:'./build_icon.svg'},
+    { title: "Build something", list1: "Build an intergration", list2: "Translate documentation", list3: "Create tutorials", list4:"Other contributions", button:"Apply", icon:'./build_icon.svg'},
     { title: "Host an event", list1: "Host a meetup / workshop", list2: "Host a conference", list3: "Create a VR world", list4:"Other events", button:"Apply", icon:'./event_icon.svg'},
     { title: "Create media / content", list1: "Product / marketing video", list2: "GIF / animation", list3: "Technical blog post", list4:"Other media", button:"Submit", icon:'./media_icon.svg'},
-    { title: "Build someting", list1: "Build an intergration", list2: "Translate documentation", list3: "Create tutorials", list4:"Other contributions", button:"Apply", icon:'./event_icon.svg'},
-    { title: "Host an event", list1: "Host a meetup / workshop", list2: "Host a conference", list3: "Create a VR world", list4:"Other events", button:"Apply", icon:'./media_icon.svg'},
-    { title: "Create media / content", list1: "Product / marketing video", list2: "GIF / animation", list3: "Technical blog post", list4:"Other media", button:"Submit", icon:'./build_icon.svg' }
   ];
 
    // Data for ColorCard Start

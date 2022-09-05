@@ -87,12 +87,13 @@
 .authorname_post{
     color:white;
     font-size:15px;
-
+    font-weight:500;
 }
 
 .img_author_post{
     height:42px;
     width:42px;
+    margin:0 1rem 0 0;
     border: 1px solid #333;
     border-radius: 360px;    margin: 0rem 2rem 0rem 0rem;
 }
