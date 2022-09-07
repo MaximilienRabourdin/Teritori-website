@@ -38,7 +38,7 @@ const Home: React.FC = () => {
       <div className="all_home">
         <img src="logo.svg" alt="Logo" className="Logo" />
         <div className="CenterElem">
-          <h1 className="Title TextGradient">TERITORI</h1>:
+          <h1 className="Title TextGradient">TERITORI</h1>
         </div>
         <div className="CenterElem">
           <span className="SubTitle TextGradient">FUTURE OF COMMUNITIES</span>:
@@ -50,9 +50,9 @@ const Home: React.FC = () => {
         </div>
 
         <div className="MainButtons">
-          <ButtonElem title="Airdrop" link="#airdrop" noBlank comingSoon />;
-          <ButtonElem title="Whitepaper" link={whitepaperLink} />;
-          <ButtonElem title="Join Validators" link={testnetLink} />;
+          <ButtonElem title="Airdrop" link="#airdrop" noBlank comingSoon />
+          <ButtonElem title="Whitepaper" link={whitepaperLink} />
+          <ButtonElem title="Join Validators" link={testnetLink} />
         </div>
     </div>
     <Footer />

@@ -35,7 +35,6 @@ useEffect(() => {
         `*[_type == "post"] {
             title,
             slug,
-            body,
             time,
             "name":author->name,
             "authorImage": author->image,
@@ -67,11 +66,11 @@ return (
     
         <div className="article_section">
         <div className='all_articles'>
-            {posts.map((post) => (
+            {posts.map((post,index) => (
                 
                 <article className='article' key={post.slug.current}>
                       <TertiaryBox squaresBackgroundColor="#000000" >
-                    <Link className='link_article' to={`/blog/${post.slug.current}`}>
+                    <Link className='link_article' key={index} to={`/blog/${post.slug.current}`}>
                     <img className='img_article' src={post.mainImage.asset.url} />
                     <h4 className='title_article'>{post.title}</h4>
                     <p className='time_read'>{post.time}</p>
