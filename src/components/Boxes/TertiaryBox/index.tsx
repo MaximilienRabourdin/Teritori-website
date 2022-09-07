@@ -50,8 +50,8 @@ style={Object.assign({
 					backgroundColor: squaresBackgroundColor,
 					width: 8,
 					height: 18,
-					left: -1,
-					top: -6,
+					left: 0,
+					top: -5,
 					transform: "rotate(45deg)"
 			}}
 	/>
@@ -63,11 +63,11 @@ style={Object.assign({
 					zIndex: 2,
 					borderRight: "1px solid #333333",
 					backgroundColor: squaresBackgroundColor,
-					width: 10,
+					width: 8,
 					height: 18,
 					right: 0,
-					bottom: -6,
-					transform: "rotate(230deg)"
+					bottom: -5,
+					transform: "rotate(225deg)"
 			}}
 	/>
 </div>
