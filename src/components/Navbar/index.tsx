@@ -38,24 +38,24 @@ const Navbar: React.FC = () => {
        <img src="/logo_header.svg" alt="logo" />
       </a>
       <ul className={active}>
-        <li className='nav__item'>
+        {/* <li className='nav__item'>
           <a href='#' className='nav__link'>
             Ecosystem
           </a>
-        </li>
+        </li> */}
         <li className='nav__item'>
-          <a href='#' className='nav__link'>
-            Testnet
+          <a href='https://airtable.com/shrRnyrCymy0r20CP' target="_blank" className='nav__link'>
+            Validator 
           </a>
         </li>
         <SubMenu />
         <li className='nav__item'>
-          <a href='#' className='nav__link'>
+          <a href='https://teritori.gitbook.io/' target="_blank" className='nav__link'>
             Docs
           </a>
         </li>
         <li className='nav__item'>
-          <a href='#' className='nav__link'>
+          <a href='https://discord.gg/f6XHba89XD' target="_blank" className='nav__link'>
             Hiring
           </a>
         </li>

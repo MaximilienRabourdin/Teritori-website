@@ -6,7 +6,7 @@ import CardGrant from '../../Cards/CardGrants';
 
 //import Header and Footer
 import Navbar from '../../Navbar';
-import Footer from '../../Footer';
+// import Footer from '../../Footer';
 
 
 // Data for cardGrant
@@ -40,7 +40,7 @@ const Grants: React.FC = () => {
        })}
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
    </div>
   );
 };

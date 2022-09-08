@@ -3,7 +3,7 @@ import './HomeStyled.css';
 
 //import components
 import NavbarHomepage from '../../NavbarHomepage';
-import Footer from '../../Footer';
+// import Footer from '../../Footer';
 
 // import extern link
 import { whitepaperLink, testnetLink } from '../../../utils/const';
@@ -52,10 +52,10 @@ const Home: React.FC = () => {
         <div className="MainButtons">
           <ButtonElem title="Airdrop" link="#airdrop" noBlank comingSoon />
           <ButtonElem title="Whitepaper" link={whitepaperLink} />
-          <ButtonElem title="Join Validators" link={testnetLink} />
+          <ButtonElem title="Join Testnet" link={testnetLink} />
         </div>
     </div>
-    <Footer />
+    {/* <Footer /> */}
     </div>
   )
 }

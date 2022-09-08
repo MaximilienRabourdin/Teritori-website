@@ -5,7 +5,7 @@ import './BlogStyled.css';
 
 //components 
 import Navbar from '../../Navbar';
-import Footer from '../../Footer';
+// import Footer from '../../Footer';
 
 
 //import Link from
@@ -93,7 +93,7 @@ return (
     </section>
     
     </div>
-    <Footer />
+    {/* <Footer /> */}
 </div>
 
 )

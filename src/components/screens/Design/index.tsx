@@ -5,7 +5,7 @@ import './DesignStyled.css';
 
 //import Header and Footer
 import Navbar from '../../Navbar';
-import Footer from '../../Footer';
+// import Footer from '../../Footer';
 
 import ColorCard from '../../Cards/ColorCard';
 import 
@@ -186,7 +186,7 @@ const Design: React.FC = () => {
         </div>
       </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
    </div>
   );
 };
