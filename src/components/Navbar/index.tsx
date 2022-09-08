@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
         </li> */}
         <li className='nav__item'>
           <a href='https://airtable.com/shrRnyrCymy0r20CP' target="_blank" className='nav__link'>
-            Validator 
+          Validators
           </a>
         </li>
         <SubMenu />
