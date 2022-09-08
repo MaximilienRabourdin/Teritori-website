@@ -32,7 +32,7 @@ const [posts, setPosts] = useState([] as any[]);
 useEffect(() => {
     client
     .fetch(
-        `*[_type == "post"] {
+        `*[_type == "post"] | order(dateTime(publishedAt) desc) {
             title,
             slug,
             time,

@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
           </a>
         </li>
         <li className='nav__item'>
-          <a href='https://discord.gg/f6XHba89XD' target="_blank" className='nav__link'>
+          <a href='https://www.notion.so/Teritori-Jobs-433344d8cadc41e3a16175788785c668' target="_blank" className='nav__link'>
             Hiring
           </a>
         </li>
